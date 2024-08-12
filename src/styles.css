@@ -30,6 +30,7 @@ input {
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ddd;
+    border-radius: 3px;
 }
 
 /* Estilos al boton*/
@@ -57,5 +58,10 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
+/*Estilos para cuando una tarea este completada*/
+li.completed {
+    text-decoration: line-through;
+    color: #888;
 }
