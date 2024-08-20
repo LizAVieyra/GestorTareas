@@ -17,11 +17,12 @@ export const renderTasks = () => {
 
         li.innerHTML = `
             ${task.text}
-             <button class="delete"> Eliminar </button>
-             <button class="toggle"> ${ task.completed === false ? "Completar" : "Deshacer"} </button>
+            <div class="buttons">
+             <button class="delete" id="Botonborrar"> Eliminar </button>
+             <button class="toggle" id="Botoncomple"> ${ task.completed === false ? "Completar" : "Deshacer"} </button>
+             </div>
         `;
 
         taskList.appendChild(li);
     });
 };
-
